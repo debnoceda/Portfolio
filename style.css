@@ -22,9 +22,18 @@ body,
     --transition: all 0.3s ease;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     color: white;
     font-family: 'IBM Plex Sans', sans-serif;
+    background-image: url("images/Background.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
   
 h1 {
@@ -102,16 +111,12 @@ h1 {
 .hero {
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding-top: var(--navbar-height); /* Add padding to account for fixed navbar */
     position: relative;
-    background-image: url("images/Background.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     overflow: hidden;
 }
+
 
 .hero-container{
     width: 100%;
@@ -138,7 +143,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 2rem;
+    gap: 80px;
 }
 
 .tagline {
@@ -147,7 +152,7 @@ h1 {
 }
 
 .hero-developer h1{
-    font-size: 13rem;
+    font-size: 12rem;
     margin-top: 0;
 }
 
@@ -230,9 +235,11 @@ h1 {
 
 /* Skills Section */
 .skills {
-    background: black;
+    background: rgb(255, 255, 255);
     padding-top: var(--navbar-height); /* Add padding to account for fixed navbar */
     padding-bottom: 80px;
+    position: relative;
+    transition: transform 0.5s ease, filter 0.5s ease;
 }
 
 .skills h1{
@@ -243,6 +250,7 @@ h1 {
     line-height: 100%;
     font-weight: 400;
     letter-spacing: -0.4vw;
+    color: #000000;
 }
 
 .skills-carousel {
