@@ -1,12 +1,118 @@
-portfolio\index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="images/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>DEB.</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <img src="images/logo.png" alt="Logo" class="logo" />
+            <a href="#hero" data-text="Home"><span>Home</span></a>
+            <a href="#skills" data-text="Skills"><span>Skills</span></a>
+            <a href="#projects" data-text="Projects"><span>Projects</span></a>
+            <a href="#experience" data-text="Experience"><span>Experience</span></a>
+            <a href="#contact" data-text="Contact"><span>Contact</span></a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <h1 class="slide-up delay-1">HI ! I'M DAVE</h1>
+            <div class="hero-developer slide-up delay-2">
+                <div class="tagline slide-up delay-3">
+                    <p>
+                    EAT.
+                    <br />CODE.
+                    <br />SLEEP.
+                    <br />REPEAT.
+                    </p>
+                </div>
+                <h1 class="slide-up delay-4">STUDENT DEVELOPER</h1>
+            </div>
+            <div class="hero-know slide-up delay-5">
+                <a href="#skills" data-text="KNOW MORE ABOUT ME">
+                    <span>KNOW MORE ABOUT ME</span>
+                </a>
+                <div class="line"></div>
+            </div>
+        </div>
+    </section>
+  
+    <section id="skills" class="skills">
+        <h1>Tech Stack</h1>
+        <div class="skills-carousel">
+            <button class="carousel-btn prev-btn" onclick="scrollCarousel(-1)"><i class="fas fa-chevron-left"></i></button>
+            <div class="skills-track" id="skillsTrack">
+                <div class="skill-item">
+                    <div class="container">
+                        <div class="card">
+                            <div class="front"></div>
+                            <div class="back">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="container">
+                        <div class="card">
+                            <div class="front"></div>
+                            <div class="back">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="container">
+                        <div class="card">
+                            <div class="front"></div>
+                            <div class="back">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="container">
+                        <div class="card">
+                            <div class="front"></div>
+                            <div class="back">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="container">
+                        <div class="card">
+                            <div class="front"></div>
+                            <div class="back">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="carousel-btn next-btn" onclick="scrollCarousel(1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+
+    </section>
+
 </body>
 </html>
