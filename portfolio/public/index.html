@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="Portfolio"
+      content="Web Portfolio of Dave B. Noceda"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link rel="stylesheet" href="/Portfolio/portfolio/src/styles.css" />
+    <title>Deb.</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-links">
+          <img src="%PUBLIC_URL%/logo.png" alt="Logo" class="logo" />
+          <a href="#hero" data-text="Home"><span>Home</span></a>
+          <a href="#skills" data-text="Skills"><span>Skills</span></a>
+          <a href="#projects" data-text="Projects"><span>Projects</span></a>
+          <a href="#experience" data-text="Experience"><span>Experience</span></a>
+          <a href="#contact" data-text="Contact"><span>Contact</span></a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div id="threejs-container"></div>
+    </section>
+
+    <section id="skills" class="skills">
+      <h1>Tech Stack</h1>
+      <div class="skills-carousel">
+          <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+          <div class="skills-track">
+              <div class="skill-item">
+                  <i class="fab fa-react"></i>
+                  <span>React</span>
+              </div>
+              <div class="skill-item">
+                  <i class="fab fa-node-js"></i>
+                  <span>Node.js</span>
+              </div>
+              <div class="skill-item">
+                  <i class="fab fa-js"></i>
+                  <span>JavaScript</span>
+              </div>
+              <div class="skill-item">
+                  <i class="fab fa-html5"></i>
+                  <span>HTML5</span>
+              </div>
+              <div class="skill-item">
+                  <i class="fab fa-css3-alt"></i>
+                  <span>CSS3</span>
+              </div>
+              <div class="skill-item">
+                  <i class="fab fa-python"></i>
+                  <span>Python</span>
+              </div>
+              <div class="skill-item">
+                  <i class="fab fa-java"></i>
+                  <span>Java</span>
+              </div>
+              <div class="skill-item">
+                  <i class="fab fa-git-alt"></i>
+                  <span>Git</span>
+              </div>
+          </div>
+          <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </section>
+    
+  </body>
+</html>
