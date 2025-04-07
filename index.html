@@ -11,31 +11,31 @@
     </head>
     <body>
         <!-- Navigation -->
-        <nav class="navbar">
+        <!-- <nav class="navbar fade-in">
             <div class="nav-links">
                 <img src="images/logo.png" alt="Logo" class="logo" />
-                <a href="#hero" data-text="Home"><span>Home</span></a>
-                <a href="#skills" data-text="Skills"><span>Skills</span></a>
-                <a href="#projects" data-text="Projects"><span>Projects</span></a>
-                <a href="#contact" data-text="Contact"><span>Contact</span></a>
-            </div>
-            <div class="mobile-menu-btn">
+                <a href="#hero" data-text="Home" class="active" onclick="scrollToSection('#hero'); return false;"><span>Home</span></a>
+                <a href="#skills" data-text="Skills" onclick="scrollToSection('#skills'); return false;"><span>Skills</span></a>
+                <a href="#projects" data-text="Projects" onclick="scrollToSection('#projects'); return false;"><span>Projects</span></a>
+                <a href="#contact" data-text="Contact" onclick="scrollToSection('#contact'); return false;"><span>Contact</span></a>
+            </div> -->
+            <!-- <div class="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
-            </div>
-        </nav>
+            </div> -->
+        <!-- </nav> -->
         
         <!-- Mobile Navigation Menu -->
-        <div class="mobile-nav">
+        <!-- <div class="mobile-nav">
             <div class="mobile-nav-close">
                 <i class="fas fa-times"></i>
             </div>
             <div class="mobile-nav-links">
-                <a href="#hero" data-text="Home"><span>Home</span></a>
-                <a href="#skills" data-text="Skills"><span>Skills</span></a>
-                <a href="#projects" data-text="Projects"><span>Projects</span></a>
-                <a href="#contact" data-text="Contact"><span>Contact</span></a>
+                <a href="#hero" data-text="Home" onclick="scrollToSection('#hero'); return false;"><span>Home</span></a>
+                <a href="#skills" data-text="Skills" onclick="scrollToSection('#skills'); return false;"><span>Skills</span></a>
+                <a href="#projects" data-text="Projects" onclick="scrollToSection('#projects'); return false;"><span>Projects</span></a>
+                <a href="#contact" data-text="Contact" onclick="scrollToSection('#contact'); return false;"><span>Contact</span></a>
             </div>
-        </div>
+        </div> -->
 
         <div id="parallax">
 
@@ -54,7 +54,7 @@
                     <h1 class="slide-up delay-4">STUDENT DEVELOPER</h1>
                 </div>
                 <div class="hero-know slide-up delay-5">
-                    <a href="#skills" data-text="KNOW MORE ABOUT ME">
+                    <a href="#skills" data-text="KNOW MORE ABOUT ME" onclick="scrollToSection('#skills'); return false;">
                         <span>KNOW MORE ABOUT ME</span>
                     </a>
                     <div class="line"></div>
@@ -116,16 +116,16 @@
                 </svg>
                 <section id="skills" class="skills">
                     <div class="skills-container">
-                        <h1 class="skills-title">Tech<br/>Stack</h1>
-                        <ul class="cards" id="skillCards"></ul>
+                        <h1 class="skills-title animate-on-scroll" data-animation="fade-in-left">Tech<br/>Stack</h1>
+                        <ul class="cards animate-on-scroll" data-animation="fade-in-right" id="skillCards"></ul>
                     </div>
                 </section>
                 <section id="projects" class="projects">
                     <div class="projects-container">
-                        <h1 class="projects-title">Projects</h1>
+                        <h1 class="projects-title animate-on-scroll" data-animation="fade-in-up">Projects</h1>
                         <div class="latest-projects-collection">
                             <div role="list" class="latest-projects-list">
-                                <div role="listitem" class="latest-project-item">
+                                <div role="listitem" class="latest-project-item animate-on-scroll" data-animation="fade-in-up">
                                     <a href="#" class="project-link">
                                         <div class="project-infos-wrapper">
                                             <div class="project-skills">
@@ -143,7 +143,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div role="listitem" class="latest-project-item">
+                                <div role="listitem" class="latest-project-item animate-on-scroll" data-animation="fade-in-up">
                                     <a href="#" class="project-link">
                                         <div class="project-infos-wrapper">
                                             <div class="project-skills">
@@ -161,7 +161,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div role="listitem" class="latest-project-item">
+                                <div role="listitem" class="latest-project-item animate-on-scroll" data-animation="fade-in-up">
                                     <a href="#" class="project-link">
                                         <div class="project-infos-wrapper">
                                             <div class="project-skills">
@@ -179,7 +179,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div role="listitem" class="latest-project-item">
+                                <div role="listitem" class="latest-project-item animate-on-scroll" data-animation="fade-in-up">
                                     <a href="#" class="project-link">
                                         <div class="project-infos-wrapper">
                                             <div class="project-skills">
@@ -197,7 +197,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div role="listitem" class="latest-project-item">
+                                <div role="listitem" class="latest-project-item animate-on-scroll" data-animation="fade-in-up">
                                     <a href="#" class="project-link">
                                         <div class="project-infos-wrapper">
                                             <div class="project-skills">
@@ -215,7 +215,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div role="listitem" class="latest-project-item">
+                                <div role="listitem" class="latest-project-item animate-on-scroll" data-animation="fade-in-up">
                                     <a href="#" class="project-link">
                                         <div class="project-infos-wrapper">
                                             <div class="project-skills">
@@ -239,10 +239,10 @@
                 </section>
                 <section id="contact" class="contact">
                     <div class="contact-container">
-                        <p>Ready to work together ?</p>
+                        <p class="animate-on-scroll" data-animation="fade-in-left">Ready to work together ?</p>
                         <div class="content-container">
-                            <h1 class="contact-title">Let's Get <br/> in Touch</h1>
-                            <div class="contact-form-wrapper">
+                            <h1 class="contact-title animate-on-scroll" data-animation="fade-in-up">Let's Get <br/> in Touch</h1>
+                            <div class="contact-form-wrapper animate-on-scroll" data-animation="fade-in-right">
                                 <form id="contact-form" class="contact-form" method="post">
                                     <div class="form-grid">
                                         <div class="form-group">
@@ -272,7 +272,16 @@
                 </section>               
             </div>
         </div>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Include jQuery from CDN with local fallback -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+                crossorigin="anonymous"></script>
+        <script>
+        // Fallback if CDN fails
+        if (typeof jQuery === 'undefined') {
+            document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"><\/script>');
+        }
+        </script>
         <script>
         // Array of skill images
         const skillImages = [
@@ -286,6 +295,49 @@
             'images/skills/10.png',
             'images/skills/11.png'
         ];
+
+        // Define the scrollToSection function
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId.replace('#', ''));
+            if (section) {
+                // Get the position of the section
+                const sectionTop = section.getBoundingClientRect().top + window.pageYOffset;
+                
+                // Check if browser supports smooth scrolling
+                if ('scrollBehavior' in document.documentElement.style) {
+                    // Modern browsers
+                    window.scrollTo({
+                        top: sectionTop,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    // Fallback for older browsers using jQuery
+                    try {
+                        $('html, body').animate({
+                            scrollTop: sectionTop
+                        }, 800);
+                    } catch (e) {
+                        // Pure JavaScript fallback if jQuery fails
+                        window.scrollTo(0, sectionTop);
+                    }
+                }
+                
+                // Update active link states in both nav menus
+                document.querySelectorAll('nav a').forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === sectionId) {
+                        link.classList.add('active');
+                    }
+                });
+                
+                // Close mobile menu if open
+                document.querySelector('.mobile-nav').classList.remove('active');
+                document.body.classList.remove('menu-open');
+                
+                return true;
+            }
+            return false;
+        }
 
         // Generate cards from array
         $(document).ready(function() {
@@ -324,6 +376,21 @@
                 $(this).find('.project-bg-overlay').css('background-color', 'rgba(33, 34, 36, 0.5)');
             });
             
+            // Animate elements when they come into view
+            function animateElementsOnScroll() {
+                $('.animate-on-scroll').each(function() {
+                    const position = $(this).offset().top;
+                    const scroll = $(window).scrollTop();
+                    const windowHeight = $(window).height();
+                    
+                    if (scroll + windowHeight - 100 > position) {
+                        const animationClass = $(this).data('animation') || 'fade-in-up';
+                        $(this).addClass(animationClass);
+                        $(this).removeClass('animate-on-scroll');
+                    }
+                });
+            }
+            
             // Animate project items when they come into view
             const animateOnScroll = function() {
                 $('.latest-project-item').each(function(index) {
@@ -337,6 +404,9 @@
                         projectItem.css('transition-delay', `${index * 0.1}s`);
                     }
                 });
+                
+                // Also call our general animation function
+                animateElementsOnScroll();
             };
             
             // Run on page load
@@ -345,19 +415,67 @@
             // Run on scroll
             $(window).scroll(function() {
                 animateOnScroll();
+                
+                // Update active navigation based on scroll position
+                const scrollPosition = $(window).scrollTop();
+                
+                // Find which section is currently in view
+                $('section').each(function() {
+                    const target = $(this);
+                    const targetTop = target.offset().top;
+                    const targetHeight = target.outerHeight();
+                    const targetId = target.attr('id');
+                    
+                    // If the scroll position is within this section
+                    if (scrollPosition >= targetTop - 200 && 
+                        scrollPosition < targetTop + targetHeight - 200) {
+                        // Remove active class from all links
+                        $('nav a').removeClass('active');
+                        // Add active class to the corresponding nav link
+                        $(`nav a[href="#${targetId}"]`).addClass('active');
+                    }
+                });
             });
 
             // Smooth scrolling for navigation links
             $('a[href^="#"]').on('click', function(e) {
                 e.preventDefault();
-                const target = $(this.getAttribute('href'));
-                if (target.length) {
-                    $('html, body').stop().animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
+                const targetId = $(this).attr('href');
+                
+                // Try native scrolling first
+                if (scrollToSection(targetId)) {
+                    // Update active state
+                    $('nav a').removeClass('active');
+                    $(this).addClass('active');
                     
-                    // Close mobile menu when a link is clicked
+                    // Close mobile menu if open
                     $('.mobile-nav').removeClass('active');
+                    $('body').removeClass('menu-open');
+                } else {
+                    // Fallback to jQuery animation
+                    const targetElement = $(targetId);
+                    
+                    if (targetElement.length) {
+                        $('html, body').animate({
+                            scrollTop: targetElement.offset().top
+                        }, 800);
+                        
+                        // Update UI
+                        $('nav a').removeClass('active');
+                        $(this).addClass('active');
+                        $('.mobile-nav').removeClass('active');
+                        $('body').removeClass('menu-open');
+                    } else {
+                        console.error('Target element not found:', targetId);
+                    }
+                }
+            });
+
+            // Add jQuery easing function for smoother scrolling
+            $.extend($.easing, {
+                easeInOutQuart: function (x, t, b, c, d) {
+                    if ((t/=d/2) < 1) return c/2*t*t*t*t + b;
+                    return -c/2 * ((t-=2)*t*t*t - 2) + b;
                 }
             });
             
@@ -399,6 +517,20 @@
                     $('.card').css('background-attachment', 'fixed');
                 }
             }).resize(); // Trigger on page load
+            
+            // Add animate-on-scroll class to elements that should animate
+            $('.skills-title, .projects-title, .contact h1, .contact p, .contact-form-wrapper').addClass('animate-on-scroll');
+            
+            // Initial animation for hero section
+            setTimeout(function() {
+                $('.hero-container h1').addClass('fade-in-up');
+                setTimeout(function() {
+                    $('.hero-developer').addClass('fade-in-up');
+                    setTimeout(function() {
+                        $('.hero-know').addClass('fade-in-up');
+                    }, 300);
+                }, 300);
+            }, 300);
         });
 
         $.fn.commentCards = function() {
